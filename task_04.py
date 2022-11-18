@@ -25,3 +25,12 @@ while i <= 8:
     i = i + 1
 print(
     f'Три песни звучат - {round(random.choice(my_time_songs)+random.choice(my_time_songs)+random.choice(my_time_songs), 2)} минут')
+
+# Хорошо, можно еще вот так
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
