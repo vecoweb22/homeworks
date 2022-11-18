@@ -15,3 +15,5 @@ def calc(salary, expences):
         credit += expences - salary
     return f'Взять в долг {round(credit, 2)} рублей на год'
 print(calc(salary, expenses))
+
+# Отлично
