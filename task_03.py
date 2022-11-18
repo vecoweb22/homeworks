@@ -17,3 +17,15 @@ def days_in_month (month):
 print('Вы ввели ', month)
 print('Количество дней ...')
 print(days_in_month(month))
+
+# Хорошо
+# Можно еще так
+# Решение 2
+import calendar as cl  # используем модуль для получения функции
+
+year_input = input("Введите год: ")
+month_input = input("Введите номер месяца: ")
+
+year = int(year_input)
+month_ = int(month_input)
+print(cl.monthrange(year, month_))
