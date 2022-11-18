@@ -43,3 +43,5 @@ for good, code in titles.items():
         price += item['quantity'] * item['price']
         quantity += item['quantity']
     print(f'{good} - {quantity} шт, стоимость {price} руб')
+
+#    Отлично
