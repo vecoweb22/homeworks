@@ -15,3 +15,19 @@ population = [[cities[0], 12.64], [cities[1], 5.38], [cities[2], 1.62], [cities[
 print(f'Население города {cities[1]} - {str(population[1][1])} млн. человек.')
 total_population = float(sum([population[0][1], population[1][1], population[2][1], population[3][1], population[4][1]]))
 print(f'Итого размер населения: ' + ' - ' + str(total_population) + ' млн. человек.')
+
+# Хорошо. Можно еще через функцию
+# Решение 1 с функцией
+def total_sun(lst):
+    total = 0
+
+    for i in lst:
+        total += i[1]
+
+    return total
+
+# Решение 2 с функцией в одну строку
+def total_sum(lst):
+    return sum([i[1] for i in lst])
+
+print(total_sum(population))
